@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  /* Subtle radial gradient for depth */
+  background-image: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #050505 100%);
+  background-attachment: fixed;
+}
