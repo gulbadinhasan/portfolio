@@ -1,7 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Terminal, Cloud, Server, Shield, GitBranch, Activity, ExternalLink, Mail, GitHub, LinkedinIcon } from 'lucide-react';
-
+import {
+  Terminal,
+  Cloud,
+  Server,
+  Shield,
+  GitBranch,
+  Activity,
+  ExternalLink,
+  Mail,
+  GitHub,
+  LinkedinIcon
+} from "lucide-react";
 // --- Reusable Components ---
 
 const SectionHeading = ({ children }) => (
@@ -136,8 +147,8 @@ function App() {
           </a>
 
           <div className="mt-16 flex justify-center gap-6">
-            <a href="#" className="text-gray-500 hover:text-neon-cyan transition-colors"><Github className="w-6 h-6" /></a>
-            <a href="#" className="text-gray-500 hover:text-neon-cyan transition-colors"><Linkedin className="w-6 h-6" /></a>
+            <a href="#" className="text-gray-500 hover:text-neon-cyan transition-colors"><GitHub className="w-6 h-6" /></a>
+            <a href="#" className="text-gray-500 hover:text-neon-cyan transition-colors"><LinkedinIcon className="w-6 h-6" /></a>
           </div>
         </motion.div>
       </footer>
