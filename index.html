@@ -301,7 +301,7 @@
     }
 
     /* ── SKILLS ── */
-    #skills { background: var(--bg2); }
+    #skills { background: var(--bg); }
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -357,7 +357,7 @@
     }
 
     /* ── EXPERIENCE ── */
-    #experience { background: var(--bg); }
+    #experience { background: var(--bg2); }
     .timeline { position: relative; padding-left: 48px; }
     .timeline::before {
       content: '';
@@ -428,7 +428,7 @@
     }
 
     /* ── PROJECTS ── */
-    #projects { background: var(--bg2); }
+    #projects { background: var(--bg); }
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -515,7 +515,7 @@
     .project-link svg { width: 12px; height: 12px; }
 
     /* ── CERTIFICATIONS ── */
-    #certifications { background: var(--bg); }
+    #certifications { background: var(--bg2); }
     .certs-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -614,7 +614,7 @@
 
     /* ── CONTACT ── */
     #contact {
-      background: var(--bg2);
+      background: var(--bg);
       text-align: center;
     }
     .contact-inner {
@@ -685,6 +685,136 @@
       to   { opacity: 1; transform: translate(0,-50%); }
     }
 
+    /* ── IMPACT ── */
+    #impact { background: var(--bg2); }
+
+    .impact-intro {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.8;
+      margin-bottom: 64px;
+      border-left: 2px solid var(--cyan);
+      padding-left: 20px;
+    }
+
+    /* Big KPI counters */
+    .impact-kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2px;
+      margin-bottom: 72px;
+    }
+    .kpi-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      padding: 36px 28px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s, transform 0.5s, border-color 0.3s;
+    }
+    .kpi-card.visible { opacity: 1; transform: translateY(0); }
+    .kpi-card::before {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .kpi-card:hover { border-color: rgba(0,245,255,0.3); }
+    .kpi-card:hover::before { opacity: 1; }
+    .kpi-value {
+      font-family: var(--font-head);
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .kpi-value .kpi-suffix {
+      font-size: 0.55em;
+      color: var(--green);
+      vertical-align: super;
+    }
+    .kpi-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      line-height: 1.5;
+    }
+    .kpi-context {
+      font-size: 11px;
+      color: rgba(107,122,153,0.6);
+      margin-top: 6px;
+      font-family: var(--font-mono);
+    }
+
+    /* Impact pillars */
+    .impact-pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .impact-pillar {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s, transform 0.5s, border-color 0.3s;
+    }
+    .impact-pillar.visible { opacity: 1; transform: translateY(0); }
+    .impact-pillar:hover { border-color: rgba(0,245,255,0.25); }
+    .pillar-header {
+      display: flex; align-items: flex-start; gap: 16px;
+      margin-bottom: 20px;
+    }
+    .pillar-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: rgba(0,245,255,0.07);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+    .pillar-title {
+      font-family: var(--font-head);
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+    .pillar-category {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--cyan);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .pillar-items { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .pillar-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      font-size: 13px; color: var(--muted); line-height: 1.6;
+    }
+    .pillar-item::before {
+      content: '▸';
+      color: var(--cyan);
+      flex-shrink: 0;
+      margin-top: 1px;
+      font-size: 11px;
+    }
+    .pillar-item strong { color: var(--text); font-weight: 500; }
+
     /* ── SCROLLBAR ── */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
@@ -711,6 +841,7 @@
   <nav>
     <div class="nav-logo"><span>~/</span>alex-chen</div>
     <ul class="nav-links">
+      <li><a href="#impact">Impact</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -757,10 +888,130 @@
     </div>
   </section>
 
+  <!-- IMPACT -->
+  <section id="impact">
+    <div class="section-header">
+      <span class="section-num">01.</span>
+      <h2 class="section-title">Key Impact</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="impact-intro">
+      Beyond shipping features and maintaining pipelines — here's the measurable value delivered across organisations. Every number has a story behind it.
+    </p>
+
+    <!-- KPI Counters -->
+    <div class="impact-kpis">
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="420" data-suffix="K">0<span class="kpi-suffix">$</span></div>
+        <div class="kpi-label">Annual Cloud Cost Savings</div>
+        <div class="kpi-context">via FinOps automation</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="40" data-suffix="%">0<span class="kpi-suffix">%</span></div>
+        <div class="kpi-label">Infrastructure Cost Reduction</div>
+        <div class="kpi-context">on-prem → EKS migration</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="10" data-suffix="x">0<span class="kpi-suffix">×</span></div>
+        <div class="kpi-label">Deployment Frequency</div>
+        <div class="kpi-context">monthly → daily releases</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="99.99" data-suffix="%" data-decimals="2">0<span class="kpi-suffix">%</span></div>
+        <div class="kpi-label">Platform Uptime Achieved</div>
+        <div class="kpi-context">multi-cloud DR system</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="80" data-suffix="%">0<span class="kpi-suffix">%</span></div>
+        <div class="kpi-label">Deployment Error Reduction</div>
+        <div class="kpi-context">automated provisioning</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="18" data-suffix="min">0<span class="kpi-suffix">m</span></div>
+        <div class="kpi-label">Env Setup Time</div>
+        <div class="kpi-context">down from multiple days</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="60" data-suffix="%">0<span class="kpi-suffix">%</span></div>
+        <div class="kpi-label">CI/CD Pipeline Speedup</div>
+        <div class="kpi-context">parallel testing + caching</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value" data-target="150" data-suffix="+">0<span class="kpi-suffix">+</span></div>
+        <div class="kpi-label">Engineers Empowered</div>
+        <div class="kpi-context">via self-service platform</div>
+      </div>
+    </div>
+
+    <!-- Impact Pillars -->
+    <div class="impact-pillars">
+      <div class="impact-pillar">
+        <div class="pillar-header">
+          <div class="pillar-icon">💸</div>
+          <div>
+            <div class="pillar-category">Cost &amp; Efficiency</div>
+            <div class="pillar-title">Financial Impact</div>
+          </div>
+        </div>
+        <ul class="pillar-items">
+          <li class="pillar-item">Delivered <strong>$420K annual savings</strong> by building a FinOps automation suite that right-sized instances and auto-scheduled non-production workloads.</li>
+          <li class="pillar-item">Reduced infrastructure spend by <strong>40%</strong> through a full on-premises to EKS migration with reserved instance planning.</li>
+          <li class="pillar-item">Cut CI/CD runtime by <strong>60%</strong>, saving thousands of engineering hours in pipeline wait time annually.</li>
+        </ul>
+      </div>
+
+      <div class="impact-pillar">
+        <div class="pillar-header">
+          <div class="pillar-icon">🚀</div>
+          <div>
+            <div class="pillar-category">Velocity &amp; Delivery</div>
+            <div class="pillar-title">Developer Productivity</div>
+          </div>
+        </div>
+        <ul class="pillar-items">
+          <li class="pillar-item">Transformed release cadence from <strong>monthly to daily deployments</strong> through GitOps and ArgoCD-driven automation across 200+ services.</li>
+          <li class="pillar-item">Built an <strong>Internal Developer Platform</strong> that cut environment setup from multiple days to 18 minutes, enabling 150+ engineers to self-serve.</li>
+          <li class="pillar-item">Eliminated manual on-call toil by <strong>automating drift detection</strong> and self-healing across the entire fleet.</li>
+        </ul>
+      </div>
+
+      <div class="impact-pillar">
+        <div class="pillar-header">
+          <div class="pillar-icon">🛡️</div>
+          <div>
+            <div class="pillar-category">Reliability &amp; Resilience</div>
+            <div class="pillar-title">Platform Stability</div>
+          </div>
+        </div>
+        <ul class="pillar-items">
+          <li class="pillar-item">Architected a <strong>multi-cloud disaster recovery</strong> system achieving 99.99% uptime with RTO &lt; 15 min and RPO &lt; 5 min, tested automatically every 24 hours.</li>
+          <li class="pillar-item">Reduced deployment-related incidents by <strong>80%</strong> through automated provisioning, replacing error-prone manual runbooks.</li>
+          <li class="pillar-item">Implemented <strong>zero-trust security</strong> posture and Vault-based secrets management, achieving SOC2 compliance with zero critical findings.</li>
+        </ul>
+      </div>
+
+      <div class="impact-pillar">
+        <div class="pillar-header">
+          <div class="pillar-icon">👥</div>
+          <div>
+            <div class="pillar-category">Leadership &amp; Culture</div>
+            <div class="pillar-title">Team &amp; Org Growth</div>
+          </div>
+        </div>
+        <ul class="pillar-items">
+          <li class="pillar-item">Mentored <strong>6 junior engineers</strong> to mid/senior level, two of whom were promoted to lead roles within 18 months.</li>
+          <li class="pillar-item">Established <strong>DevOps Centre of Excellence</strong> — internal guild of 20+ engineers sharing best practices, reducing knowledge silos across teams.</li>
+          <li class="pillar-item">Authored <strong>company-wide IaC standards</strong> and runbook frameworks adopted by 4 product teams, cutting incident resolution time by 35%.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-header">
-      <span class="section-num">01.</span>
+      <span class="section-num">02.</span>
       <h2 class="section-title">Technical Arsenal</h2>
       <div class="section-line"></div>
     </div>
@@ -843,7 +1094,7 @@
   <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-header">
-      <span class="section-num">02.</span>
+      <span class="section-num">03.</span>
       <h2 class="section-title">Experience</h2>
       <div class="section-line"></div>
     </div>
@@ -916,7 +1167,7 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="section-header">
-      <span class="section-num">03.</span>
+      <span class="section-num">04.</span>
       <h2 class="section-title">Key Projects</h2>
       <div class="section-line"></div>
     </div>
@@ -1018,7 +1269,7 @@
   <!-- CERTIFICATIONS -->
   <section id="certifications">
     <div class="section-header">
-      <span class="section-num">04.</span>
+      <span class="section-num">05.</span>
       <h2 class="section-title">Certifications</h2>
       <div class="section-line"></div>
     </div>
@@ -1135,7 +1386,7 @@
   <section id="contact">
     <div class="contact-inner">
       <div class="section-header" style="justify-content:center; margin-bottom:32px;">
-        <span class="section-num">05.</span>
+        <span class="section-num">06.</span>
         <h2 class="section-title">Contact</h2>
       </div>
       <h2 class="contact-title">Let's Build<br /><span class="accent">Something.</span></h2>
@@ -1199,8 +1450,38 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.timeline-item, .project-card, .cert-card').forEach(el => {
+    document.querySelectorAll('.timeline-item, .project-card, .cert-card, .kpi-card, .impact-pillar').forEach(el => {
       observer.observe(el);
+    });
+
+    // ── Animated KPI Counters ──
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseFloat(el.dataset.target);
+          const decimals = parseInt(el.dataset.decimals || 0);
+          const suffix = el.querySelector('.kpi-suffix');
+          const suffixHTML = suffix ? suffix.outerHTML : '';
+          const duration = 1800;
+          const startTime = performance.now();
+
+          function update(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = (target * eased).toFixed(decimals);
+            el.innerHTML = current + suffixHTML;
+            if (progress < 1) requestAnimationFrame(update);
+          }
+          requestAnimationFrame(update);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.kpi-value[data-target]').forEach(el => {
+      counterObserver.observe(el);
     });
 
     // ── Active Nav Link ──
