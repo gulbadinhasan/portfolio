@@ -292,7 +292,7 @@ function Nav({ active }) {
       transition: "all 0.4s",
     }}>
       <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 13, color: T.cyan, letterSpacing: "0.1em" }}>
-        <span style={{ color: T.muted }}>~/</span>alex-chen
+        <span style={{ color: T.muted }}>~/</span>gulbadin-hasan
       </div>
       <ul style={{ display: "flex", gap: 36, listStyle: "none" }}>
         {NAV_LINKS.map(l => (
@@ -389,12 +389,12 @@ function Hero() {
           marginBottom: 20,
           opacity: 0, animation: "count-up 0.8s 0.3s forwards",
         }}>
-          Alex<br />
+          Gulbadin<br />
           <span style={{
             background: `linear-gradient(135deg, ${T.cyan}, ${T.purple})`,
             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
             backgroundClip: "text",
-          }}>Chen.</span>
+          }}>Hasan.</span>
         </h1>
 
         <div style={{
@@ -670,16 +670,22 @@ function SkillCard({ icon, title, tags, delay }) {
 
 /* ─── EXPERIENCE ─────────────────────────────────────────────── */
 const JOBS = [
-  { period: "2022 — Present", role: "Lead DevOps Engineer", company: "TechCore Systems", loc: "San Francisco, CA",
+  { period: "Jun 2024 — Oct 2025", role: "Lead DevOps Engineer", company: "9YT", loc: "Remote",
     desc: "Architected and led migration of 200+ microservices from on-prem to EKS, achieving 40% cost reduction and improving deployment frequency from monthly to daily. Built an internal platform serving 150+ engineers, reducing environment setup time from days to 18 minutes.",
     tags: ["AWS EKS","Terraform","ArgoCD","Istio","Grafana","Backstage"] },
-  { period: "2019 — 2022", role: "Senior DevOps Engineer", company: "DataStream Inc", loc: "New York, NY",
+  { period: "Apr 2023 — Jun 2024", role: "Senior Cloud Infrastucture Engineer", company: "Arkose Labs", loc: "Pune, India",
+    desc: "Architected and led migration of 200+ microservices from on-prem to EKS, achieving 40% cost reduction and improving deployment frequency from monthly to daily. Built an internal platform serving 150+ engineers, reducing environment setup time from days to 18 minutes.",
+    tags: ["AWS EKS","Terraform","ArgoCD","Istio","Grafana","Backstage"] },
+  { period: "Dec 2020 — Apr 2023", role: "Technical Lead", company: "Incedo Inc.", loc: "Pune, India",
+    desc: "Architected and led migration of 200+ microservices from on-prem to EKS, achieving 40% cost reduction and improving deployment frequency from monthly to daily. Built an internal platform serving 150+ engineers, reducing environment setup time from days to 18 minutes.",
+    tags: ["AWS EKS","Terraform","ArgoCD","Istio","Grafana","Backstage"] },
+  { period: "May 2019 — Dec 2020", role: "Data Engineer", company: "DataStream Inc", loc: "Pune, India",
     desc: "Designed multi-cloud disaster recovery system achieving 99.99% uptime. Reduced CI/CD pipeline run time by 60% through parallel testing and intelligent caching. Mentored a team of 6 junior engineers.",
     tags: ["GCP","Kubernetes","Jenkins","Vault","Ansible"] },
-  { period: "2016 — 2019", role: "DevOps Engineer", company: "CloudBridge LLC", loc: "Austin, TX",
+  { period: "July 2016 — May 2019", role: "Sr Systems Engineer", company: "CloudBridge LLC", loc: "Nagpur, India",
     desc: "Built foundational CI/CD infrastructure from scratch using GitLab and Docker. Automated server provisioning with Ansible, reducing deployment errors by 80%. Implemented ELK stack for centralised logging across 50+ services.",
     tags: ["Docker","GitLab CI","Ansible","ELK Stack"] },
-  { period: "2013 — 2016", role: "Systems Administrator", company: "NetSphere Corp", loc: "Chicago, IL",
+  { period: "Jan 2014 — July 2016", role: "Sr Systems Engineer", company: "NetSphere Corp", loc: "Pune, India",
     desc: "Managed hybrid infrastructure for 1000+ user enterprise. Automated routine maintenance with Bash and Python scripts, reclaiming 15+ hours of manual work per week.",
     tags: ["Linux","Bash","Python","VMware"] },
 ];
@@ -800,7 +806,7 @@ function ProjectCard({ num, title, desc, metric, stack, color, delay }) {
           ))}
         </div>
         <div style={{ marginTop: 24, paddingTop: 20, borderTop: `1px solid ${T.border}`, display: "flex", gap: 16 }}>
-          <a href="https://github.com/alexchen" target="_blank" rel="noopener"
+          <a href="https://github.com/gulbadinhasan" target="_blank" rel="noopener"
             style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 11, color: T.muted, textDecoration: "none", letterSpacing: "0.1em", textTransform: "uppercase", transition: "color 0.2s" }}
             onMouseEnter={e => e.target.style.color = color}
             onMouseLeave={e => e.target.style.color = T.muted}
@@ -895,10 +901,10 @@ function CertCard({ icon, authority, name, year, status, url, delay }) {
 
 /* ─── CONTACT ────────────────────────────────────────────────── */
 const LINKS = [
-  { label: "Email",    href: "mailto:alex@example.com",              icon: "✉" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/alexchen",     icon: "in" },
-  { label: "GitHub",   href: "https://github.com/alexchen",          icon: "gh" },
-  { label: "Resume",   href: "/resume.pdf",                          icon: "↓" },
+  { label: "Email",    href: "mailto:gulbadinhasan1@gmail.com",           icon: "✉" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/gulbadinhasan",     icon: "in" },
+  { label: "GitHub",   href: "https://github.com/gulbadinhasan",          icon: "gh" },
+  { label: "Resume",   href: "/resume.pdf",                               icon: "↓" },
 ];
 
 function Contact() {
@@ -973,7 +979,7 @@ function Footer() {
       background: T.bg,
     }}>
       <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 11, color: T.muted }}>
-        <span style={{ color: T.cyan }}>Alex Chen</span> · Lead DevOps Engineer · Built with React
+        <span style={{ color: T.cyan }}>Gulbadin Hasan</span> · Lead DevOps Engineer · Built with React
       </div>
       <div style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 11, color: T.muted }}>
         <span style={{ color: T.cyan }}>©</span> 2025 · Hosted on GitHub Pages
