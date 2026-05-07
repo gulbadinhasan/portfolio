@@ -1,18 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Terminal, Cloud, Server, Shield, GitBranch, Activity, ExternalLink, Mail, GitHub, LinkedinIcon } from 'lucide-react';
-import {
-  Terminal,
-  Cloud,
-  Server,
-  Shield,
-  GitBranch,
-  Activity,
-  ExternalLink,
-  Mail,
-  GitHub,
-  LinkedinIcon
-} from "lucide-react";
+
 // --- Reusable Components ---
 
 const SectionHeading = ({ children }) => (
