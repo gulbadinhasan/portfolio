@@ -901,10 +901,15 @@ function CertCard({ icon, authority, name, year, status, url, delay }) {
 
 /* ─── CONTACT ────────────────────────────────────────────────── */
 const LINKS = [
-  { label: "Email",    href: "mailto:gulbadinhasan1@gmail.com",           icon: "✉" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/gulbadinhasan",     icon: "in" },
-  { label: "GitHub",   href: "https://github.com/gulbadinhasan",          icon: "gh" },
-  { label: "Resume",   href: "/Gulbadin_Hasan's_CV.pdf",                  icon: "↓" },
+  { label: "Email",    href: "mailto:gulbadinhasan1@gmail.com",       icon: "✉" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/gulbadinhasan", icon: "in" },
+  { label: "GitHub",   href: "https://github.com/gulbadinhasan",      icon: "gh" },
+
+  {
+    label: "Resume",
+    href: `${import.meta.env.BASE_URL}Gulbadin_Hasans_CV.pdf`,
+    icon: "↓"
+  },
 ];
 
 function Contact() {
