@@ -904,7 +904,7 @@ const LINKS = [
   { label: "Email",    href: "mailto:gulbadinhasan1@gmail.com",           icon: "✉" },
   { label: "LinkedIn", href: "https://linkedin.com/in/gulbadinhasan",     icon: "in" },
   { label: "GitHub",   href: "https://github.com/gulbadinhasan",          icon: "gh" },
-  { label: "Resume",   href: "/resume.pdf",                               icon: "↓" },
+  { label: "Resume",   href: "/Gulbadin_Hasan's_CV.pdf",                  icon: "↓" },
 ];
 
 function Contact() {
