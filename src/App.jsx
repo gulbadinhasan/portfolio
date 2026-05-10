@@ -770,10 +770,10 @@ const AZURE_LOGO = (
 );
 
 const CERTS=[
-  {logo:AWS_LOGO, auth:"Amazon Web Services",    name:"AWS Solutions Architect — Professional",   year:2023,status:"Active",url:"https://aws.amazon.com/certification/certified-solutions-architect-professional/"},
-  {logo:CKA_LOGO, auth:"CNCF / Linux Foundation",name:"Certified Kubernetes Administrator (CKA)", year:2022,status:"Active",url:"https://www.cncf.io/certification/cka/"},
-  {logo:TF_LOGO,  auth:"HashiCorp",              name:"HashiCorp Certified: Terraform Associate", year:2023,status:"Active",url:"https://www.hashicorp.com/certification/terraform-associate"},
-  {logo:AZURE_LOGO,auth:"Microsoft Azure",       name:"Microsoft Azure Fundamentals (AZ-900)",    year:2022,status:"Active",url:"https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"},
+  {logo:AWS_LOGO, auth:"Amazon Web Services",    name:"AWS Solutions Architect — Professional",   year:2024,status:"Active",url:"https://www.credly.com/badges/9a97a4bc-532b-419c-81d8-88550232e08e/public_url/"},
+  {logo:CKA_LOGO, auth:"CNCF / Linux Foundation",name:"Certified Kubernetes Administrator (CKA)", year:2025,status:"Active",url:"https://www.credly.com/badges/2ba4a6cc-a193-4ef8-bb70-45e610236fe4/"},
+  {logo:TF_LOGO,  auth:"HashiCorp",              name:"HashiCorp Certified: Terraform Associate", year:2024,status:"Active",url:"https://www.credly.com/badges/fb275283-8edd-46d9-b777-662b197193e0/"},
+  {logo:AZURE_LOGO,auth:"Microsoft Azure",       name:"Microsoft Azure Fundamentals (AZ-900)",    year:2020,status:"Active",url:"https://www.credly.com/badges/4a3548ca-c870-424c-913e-6e04d43101c3/"},
 ];
 
 function Certifications(){
