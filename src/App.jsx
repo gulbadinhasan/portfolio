@@ -822,7 +822,7 @@ const CLINKS=[
   {label:"Email",   href:"mailto:gulbadinhasan1@gmail.com", icon:"✉"},
   {label:"LinkedIn",href:"https://linkedin.com/in/gulbadin-hasan", icon:"in"},
   {label:"GitHub",  href:"https://github.com/gulbadinhasan",       icon:"gh"},
-  {label:"Resume",  href:"/Gulbadin_Hasan_CV.pdf",                 icon:"↓"},
+  {label:"Resume",  href:"/portfolio/Gulbadin_Hasan_CV.pdf",                 icon:"↓"},
 ];
 
 function Contact(){
