@@ -133,7 +133,7 @@ function TerminalIntro({ onDone }) {
             ))}
           </div>
           <span style={{ fontFamily:"'Share Tech Mono',monospace", fontSize:12, color:"rgba(0,240,255,.5)", letterSpacing:".1em", marginLeft:8 }}>
-            alex@portfolio — zsh — 80×24
+            gulbadin@portfolio — zsh — 80×24
           </span>
         </div>
 
