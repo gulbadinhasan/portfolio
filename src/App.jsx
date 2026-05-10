@@ -822,7 +822,7 @@ const CLINKS=[
   {label:"Email",   href:"mailto:gulbadinhasan1@gmail.com", icon:"✉"},
   {label:"LinkedIn",href:"https://linkedin.com/in/gulbadin-hasan", icon:"in"},
   {label:"GitHub",  href:"https://github.com/gulbadinhasan",       icon:"gh"},
-  {label:"Resume",  href:"/resume.pdf",                            icon:"↓"},
+  {label:"Resume",  href:"/Gulbadin_Hasan_CV.pdf",                 icon:"↓"},
 ];
 
 function Contact(){
@@ -852,7 +852,7 @@ function Contact(){
 function CLink({ label,href,icon }){
   const T=useT(); const [h,setH]=useState(false);
   return (
-    <a href={href} target={href.startsWith("mailto")||href.endsWith(".pdf")?undefined:"_blank"} rel="noopener"
+    <a href={href} target={href.endsWith(".pdf") || !href.startsWith("mailto") ? "_blank" : undefined} rel="noopener noreferrer"
       onMouseEnter={()=>setH(true)} onMouseLeave={()=>setH(false)}
       style={{ display:"flex",alignItems:"center",gap:10,padding:"14px 28px", border:`1px solid ${h?T.cyan:T.border}`, color:h?T.cyan:T.muted, background:h?`${T.cyan}0d`:"transparent", fontFamily:"'Share Tech Mono',monospace",fontSize:12,letterSpacing:".1em",textTransform:"uppercase",textDecoration:"none",cursor:"none", transition:"all .3s",boxShadow:h?T.glow:"none" }}
     ><span style={{ fontSize:14 }}>{icon}</span>{label}</a>
