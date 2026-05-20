@@ -938,8 +938,9 @@ function Contact() {
         <div style={{ display:"flex", flexWrap:"wrap", gap:12 }}>
           {[
             { label:"send mail",   href:"mailto:gulbadinhasan1@gmail.com" },
-            { label:"linkedin",    href:"https://linkedin.com/in/gulbadin-hasan" },
-            { label:"portfolio",   href:"https://gulbadin-hasan.dev" },
+            { label:"linkedin",    href:"https://linkedin.com/in/gulbadinhasan" },
+            { label:"github",   href:"https://github.com/gulbadinhasan" },
+            { label:"resume",  href:"/portfolio/Gulbadin_Hasan_CV.pdf",}
           ].map(l => <ContactBtn key={l.label} {...l} />)}
         </div>
       </div>
