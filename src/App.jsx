@@ -886,7 +886,7 @@ function Contact() {
     { t:900,  text:"✔ availability: Immediate" },
     { t:1200, text:"✔ mode: Remote or Hybrid" },
     { t:1500, text:"✔ contact: gulbadinhasan1@gmail.com" },
-    { t:1800, text:"✔ linkedin: linkedin.com/in/gulbadin-hasan" },
+    { t:1800, text:"✔ linkedin: linkedin.com/in/gulbadinhasan" },
     { t:2100, text:"" },
     { t:2200, text:"chain complete. Ready to connect." },
   ];
