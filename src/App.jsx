@@ -819,10 +819,10 @@ function ProjectCard({ num, title, result, color, pipeline, desc, stack, delay }
    CERTIFICATIONS — Document loader format
 ═══════════════════════════════════════════════════════════════ */
 const CERTS = [
-  { icon:"☁️", issuer:"Amazon Web Services",    title:"AWS Solutions Architect — Professional", valid:"2023–2026", level:"Professional", url:"https://aws.amazon.com/certification/certified-solutions-architect-professional/", color:T.amber },
-  { icon:"⚙️", issuer:"CNCF / Linux Foundation", title:"Certified Kubernetes Administrator",    valid:"2022–2025", level:"Professional", url:"https://www.cncf.io/certification/cka/",  color:T.teal },
-  { icon:"🔧", issuer:"HashiCorp",               title:"Terraform Associate",                   valid:"2023–2025", level:"Associate",    url:"https://www.hashicorp.com/certification/terraform-associate", color:"#a855f7" },
-  { icon:"🪟", issuer:"Microsoft",               title:"Azure Fundamentals (AZ-900)",           valid:"2022–∞",    level:"Fundamentals", url:"https://learn.microsoft.com/en-us/certifications/azure-fundamentals/", color:"#6366f1" },
+  { icon:"☁️", issuer:"Amazon Web Services",    title:"AWS Solutions Architect — Professional", valid:"2023–2026", level:"Professional", url:"https://www.credly.com/badges/9a97a4bc-532b-419c-81d8-88550232e08e/public_url/", color:T.amber },
+  { icon:"⚙️", issuer:"CNCF / Linux Foundation", title:"Certified Kubernetes Administrator",    valid:"2022–2025", level:"Professional", url:"https://www.credly.com/badges/2ba4a6cc-a193-4ef8-bb70-45e610236fe4/",  color:T.teal },
+  { icon:"🔧", issuer:"HashiCorp",               title:"Terraform Associate",                   valid:"2023–2025", level:"Associate",    url:"https://www.credly.com/badges/fb275283-8edd-46d9-b777-662b197193e0/", color:"#a855f7" },
+  { icon:"🪟", issuer:"Microsoft",               title:"Azure Fundamentals (AZ-900)",           valid:"2022–∞",    level:"Fundamentals", url:"https://www.credly.com/badges/4a3548ca-c870-424c-913e-6e04d43101c3/", color:"#6366f1" },
 ];
 
 function Certifications() {
