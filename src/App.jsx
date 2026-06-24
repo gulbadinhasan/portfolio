@@ -818,7 +818,7 @@ function ProjectCard({ num, title, result, color, pipeline, desc, stack, delay }
 /* ═══════════════════════════════════════════════════════════════
    CERTIFICATIONS — Document loader format
 ═══════════════════════════════════════════════════════════════ */
-const CERTS = [
+const CERT = [
   { icon:"☁️", issuer:"Amazon Web Services",    title:"AWS Solutions Architect — Professional", valid:"2023–2026", level:"Professional", url:"https://www.credly.com/badges/9a97a4bc-532b-419c-81d8-88550232e08e/public_url/", color:T.amber },
   { icon:"⚙️", issuer:"CNCF / Linux Foundation", title:"Certified Kubernetes Administrator",    valid:"2022–2025", level:"Professional", url:"https://www.credly.com/badges/2ba4a6cc-a193-4ef8-bb70-45e610236fe4/",  color:T.teal },
   { icon:"🔧", issuer:"HashiCorp",               title:"Terraform Associate",                   valid:"2023–2025", level:"Associate",    url:"https://www.credly.com/badges/fb275283-8edd-46d9-b777-662b197193e0/", color:"#a855f7" },
