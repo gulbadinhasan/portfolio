@@ -581,7 +581,7 @@ function MetricCard({ k, v, note, color, delay }) {
    STACK — Tool registry format
 ═══════════════════════════════════════════════════════════════ */
 const TOOLS = [
-  { name:"Azure",            desc:"EKS·ECS·EC2·Lambda·VPC·S3·IAM·KMS·RDS·DynamoDB·CloudFront·EMR·Security Hub", type:"cloud",    since:"2019" },
+  { name:"AWS",            desc:"EKS·ECS·EC2·Lambda·VPC·S3·IAM·KMS·RDS·DynamoDB·CloudFront·EMR·Security Hub", type:"cloud",    since:"2019" },
   { name:"Kubernetes",     desc:"Cluster admin · upgrades · RBAC · networking · workload mgmt",                type:"container",since:"2020" },
   { name:"Terraform",      desc:"Reusable modules · multi-env · drift detection · cost estimation",            type:"iac",      since:"2019" },
   { name:"ArgoCD",         desc:"GitOps · self-service portal · drift sync · app-of-apps pattern",            type:"cicd",     since:"2022" },
