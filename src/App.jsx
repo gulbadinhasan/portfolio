@@ -581,7 +581,7 @@ function MetricCard({ k, v, note, color, delay }) {
    STACK — Tool registry format
 ═══════════════════════════════════════════════════════════════ */
 const TOOLS = [
-  { name:"AWS",            desc:"EKS·ECS·EC2·Lambda·VPC·S3·IAM·KMS·RDS·DynamoDB·CloudFront·EMR·Security Hub", type:"cloud",    since:"2019" },
+  { name:"Azure",            desc:"EKS·ECS·EC2·Lambda·VPC·S3·IAM·KMS·RDS·DynamoDB·CloudFront·EMR·Security Hub", type:"cloud",    since:"2019" },
   { name:"Kubernetes",     desc:"Cluster admin · upgrades · RBAC · networking · workload mgmt",                type:"container",since:"2020" },
   { name:"Terraform",      desc:"Reusable modules · multi-env · drift detection · cost estimation",            type:"iac",      since:"2019" },
   { name:"ArgoCD",         desc:"GitOps · self-service portal · drift sync · app-of-apps pattern",            type:"cicd",     since:"2022" },
@@ -819,7 +819,7 @@ function ProjectCard({ num, title, result, color, pipeline, desc, stack, delay }
    CERTIFICATIONS — Document loader format
 ═══════════════════════════════════════════════════════════════ */
 const CERTS = [
-  
+  { icon:"☁️", issuer:"Amazon Web Services",    title:"AWS Solutions Architect — Professional", valid:"2023–2026", level:"Professional", url:"https://www.credly.com/badges/9a97a4bc-532b-419c-81d8-88550232e08e/public_url/", color:T.amber },
   { icon:"⚙️", issuer:"CNCF / Linux Foundation", title:"Certified Kubernetes Administrator",    valid:"2022–2025", level:"Professional", url:"https://www.credly.com/badges/2ba4a6cc-a193-4ef8-bb70-45e610236fe4/",  color:T.teal },
   { icon:"🔧", issuer:"HashiCorp",               title:"Terraform Associate",                   valid:"2023–2025", level:"Associate",    url:"https://www.credly.com/badges/fb275283-8edd-46d9-b777-662b197193e0/", color:"#a855f7" },
   { icon:"🪟", issuer:"Microsoft",               title:"Azure Fundamentals (AZ-900)",           valid:"2022–∞",    level:"Fundamentals", url:"https://www.credly.com/badges/4a3548ca-c870-424c-913e-6e04d43101c3/", color:"#6366f1" },
